@@ -1,0 +1,5 @@
+<mat-card class="card-feed-entry">
+  <mat-card-title>{{feed.title}}</mat-card-title>
+  <mat-card-subtitle>{{feed.author}} - {{feed.pubDate | date:'dd-MM-yyyy'}}</mat-card-subtitle>
+  <mat-card-content [innerHTML]="feed.description" ></mat-card-content>
+</mat-card>
